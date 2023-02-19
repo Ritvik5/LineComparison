@@ -4,16 +4,19 @@
     {
         static void Main(string[] args)
         {
-            //Constants
-            int x1 = 1;
-            int y1 = 2;
-            int x2 = 3;
-            int y2 = 4;
-            //Variables
-            double dist = 0;
-            dist = Math.Sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
+            double a1 = 1;
+            double a2 = 2;
+            double b1 = 3;
+            double b2 = 6;
+            double c1 = 4;
+            double c2 = 8;
 
-            Console.WriteLine("Distance Between Two Point is " + dist);
+            if ((a1 / a2 == b1 / b2) && (c1 / c2 == a1 / a2) && (b1 / b2 == c1 / c2))
+            {
+                Console.WriteLine("The Two lines are Equal");
+            }
+            else
+                Console.WriteLine("The Two Lines are not Equal");
         }
     }
 }
